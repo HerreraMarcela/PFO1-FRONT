@@ -1,0 +1,250 @@
+/* --- 1. ESTILOS GENERALES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita desplazamientos  */
+}
+
+/* --- 2. NAVEGACIÓN  --- */
+header {
+    background-color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff0f5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #ff8fa3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff8fa3;
+}
+
+/* --- 3. SECCIONES GENERALES --- */
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+h2.section-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #ff8fa3;
+}
+
+/* --- 4. SOBRE MÍ-  CON INTERACTIVIDAD) --- */
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-check { display: none; }
+
+.avatar-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid #ffe4e9;
+    transition: all 0.5s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.profile-img:hover {
+    border-radius: 50%;
+    border-color: #ff8fa3;
+    transform: scale(1.05);
+}
+
+.info-card {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 280px;
+    background: white;
+    border: 2px solid #ff8fa3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: none;
+}
+
+.info-check:checked ~ .avatar-wrapper .info-card {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* --- 5. FORMACIÓN CON FLEXBOX --- */
+#tarjetas .contenedor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fffafb;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    border: 1px solid #ffe4e9;
+    box-shadow: 0 10px 20px rgba(255, 143, 163, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #ff8fa3;
+}
+
+/* --- 6. HABILIDADES (LISTA) --- */
+.skills-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills-list { list-style: none; padding: 0; }
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.skill-item.mastered { background: #fffafb; border: 1px solid #ffe4e9; font-weight: 600; }
+.skill-item.learning { background: #fff; border: 1px dashed #ff8fa3; opacity: 0.8; }
+
+.skill-item:hover { transform: translateX(10px); }
+
+/* --- 7. PELÍCULAS (GRID Y HOVER) --- */
+.movies-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #000;
+}
+
+.movie-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.movie-description {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(255, 143, 163, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .movie-description { opacity: 1; }
+.movie-card:hover .movie-img { transform: scale(1.1); opacity: 0.4; }
+
+/* --- 8. FORMULARIO --- */
+#contacto form {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ffe4e9;
+    border-radius: 10px;
+    outline: none;
+}
+
+input:focus { border-color: #ff8fa3; }
+
+button {
+    background-color: #ff8fa3;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #ffb3c1; }
+
+/* --- 9. FOOTER --- */
+footer {
+    padding: 40px;
+    background: #fffafb;
+    border-top: 1px solid #ffe4e9;
+}
+
+.socials { margin-top: 15px; font-size: 1.5rem; }
+.socials a { color: #ff8fa3; margin: 0 10px; }
+
+/* --- 10. RESPONSIVE --- */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 15px; }
+    nav ul { gap: 10px; font-size: 0.8rem; }
+    section { padding: 40px 5%; }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Personal</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     
+     <!-- Header: Contiene la barra de navegación principal con enlaces a las secciones del sitio -->
+
+    <header>
+
+        <nav class="navbar">
+            <div class="logo">MI PORTAFOLIO PERSONAL</div>
+
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#tarjetas">Formación Académica</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#películasfavoritas">Películas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<!-- Sección Sobre mí: Presentación personal con información básica y tarjeta interactiva -->
+
+        <section id="sobre-mi" class="section">
+    <div class="intro-content">
+        <input type="checkbox" id="toggle-info" class="info-check">
+        
+        <label for="toggle-info" class="avatar-wrapper">
+            <img src="img/avatar.jpeg" alt="Mi Foto de Perfil" class="profile-img">
+            
+            <div class="info-card">
+                <h3>Un poco más sobre mí ✨</h3>
+                <p>📍 Vivo en Moreno, Buenos Aires.</p>
+                <p>💻 Estudio en el IFTS 29.</p>
+                <p>🎨 Me encanta la Química.</p>
+                
+                <h3> Mis hobbies 🎀 </h3>
+                <p>🎬 Mirar peliculas de terror. </p>
+                <p>🎮Jugar videojuegos.</p>
+                <p>📚 Leer libros.</p>
+                <p>🍕 Cocinar.</p>
+                <span class="close-hint">(Haz clic de nuevo para cerrar)</span>
+            </div>
+        </label>
+
+        <h1>¡Hola!, soy Marcela</h1>
+        <p>Estudiante de Desarrollo de Software y de Biotecnología.Mi misión como 
+            desarrolladora es aprender a usar el código para resolver problemas reales, uniendo 
+            mis dos carreras para crear herramientas que sean útiles y fáciles de usar.</p>
+        <p class="click-me-text">✨ Click en mi foto para conocerme más ✨</p>
+    </div>
+</section>
+
+<!-- Seccion Formación Académica: Tarjetas organizadas en columnas usando Flexbox o Grid -->
+
+<section id="tarjetas" class="section">
+    <h2 class="section-title">Formación Académica</h2>
+    <div class="contenedor-cards">
+        
+        <article class="card">
+            <div class="card-icon" style="font-size: 3rem; margin-bottom: 10px;">💻</div>
+            <h3>Desarrollo de Software</h3>
+            <p>Me apasiona la lógica de programación y el diseño de interfaces modernas.</p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon" style="font-size: 3rem; margin-bottom: 10px;">🧬</div>
+            <h3>Biotecnología</h3>
+            <p>Aplico el método científico para innovar en el área de la salud y la ciencia.</p>
+        </article>
+
+    </div>
+</section>
+<!-- Sección Habilidades: Listado de tecnologías dominadas y en aprendizaje -->
+        <section id="habilidades" class="section">
+    <h2 class="section-title">Habilidades</h2>
+    
+    <div class="skills-wrapper">
+        <ul class="skills-list">
+            <li class="skill-item mastered">
+                <span class="skill-name">HTML5 / CSS</span>
+                <span class="skill-status"> En proceso </span>
+            </li>
+            <li class="skill-item mastered">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-status"> Intermedio</span>
+            </li>
+            <li class="skill-item mastered">
+                <span class="skill-name">Análisis Químico y Biotecnológico</span>
+                <span class="skill-status"> Avanzado</span>
+            </li>
+
+            <li class="skill-item learning">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-status"> En proceso</span>
+            </li>
+            <li class="skill-item learning">
+                <span class="skill-name">Python </span>
+                <span class="skill-status"> En proceso</span>
+            </li>
+            <li class="skill-item learning">
+                <span class="skill-name">Bioinformática</span>
+                <span class="skill-status">Próximamente</span>
+            </li>
+            <li class="skill-item learning">
+                <span class="skill-name">Bases de Datos SQL</span>
+                <span class="skill-status">Próximamente</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Sección Películas: Muestra mis películas  con imagen y breve descripción -->
+      <section id="películasfavoritas" class="section">
+    <h2 class="section-title">Películas Favoritas</h2>
+    <div class="movies-grid">
+        
+        <div class="movie-item">
+            <div class="movie-card">
+                <img src="img/peli1.jpg" alt="Viernes 13" class="movie-img">
+                <div class="movie-description">
+                    <p>Clásica del cine de terror donde un grupo de jóvenes reabre un campamento maldito.</p>
+                </div>
+            </div>
+            <h3>Viernes 13</h3>
+        </div>
+
+        <div class="movie-item">
+            <div class="movie-card">
+                <img src="img/peli2.jpg" alt="Back to the Future" class="movie-img">
+                <div class="movie-description">
+                    <p>Película icónica donde un joven es transportado al pasado alterando su propio destino.</p>
+                </div>
+            </div>
+            <h3>Volver al futuro</h3>
+        </div>
+
+        <div class="movie-item">
+            <div class="movie-card">
+                <img src="img/peli3.jpg" alt="Terminator 2" class="movie-img">
+                <div class="movie-description">
+                    <p>Un cyborg del futuro debe proteger a un niño que es la clave para la salvación humana.</p>
+                </div>
+            </div>
+            <h3>Terminator 2</h3>
+        </div>
+
+    </div> 
+</section>
+<section id="contacto" class="section">
+            <h2 class="section-title">Contáctame</h2>
+            <form class="contact-form">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                <label for="tel">Teléfono</label>
+                <input type="tel" id="tel" name="tel" placeholder="Tu número">
+
+                <button type="submit" class="btn-send">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer: Contiene información final y enlace a github -->
+    <footer>
+        <p>&copy; 2026 Marcela. PFO1 FRONT-END - IFTS 29.</p>
+        <div class="socials">
+            <a href="https://github.com/HerreraMarcela" target="_blank" class="social-icon">
+    <i class="fab fa-github"></i>
+</a>
+           
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 # PFO 1 - FRONTEND
 
 ## Descripción del Proyecto
-Este proyecto consiste en el diseño y maquetación de una Landing Page que funciona como portafolio personal. El objetivo principal es la implementación de una arquitectura de información clara utilizando **HTML5** y la estilización avanzada mediante **CSS3**.
+Este proyecto consiste en el diseño y maquetación de una Landing Page que funciona como portafolio personal. El objetivo principal es la implementación de HTML y la estilización mediante CSS.
 
 ---
 
@@ -16,7 +16,7 @@ Este proyecto consiste en el diseño y maquetación de una Landing Page que func
 ###  Repositorio y Publicación
 - [x] Repositorio en GitHub creado y proyecto subido.
 - [x] Proyecto publicado utilizando **GitHub Pages**.
-- [x] **URL de GitHub Pages:** [PEGÁ AQUÍ EL LINK DE TU WEB]
+- [x] **URL de GitHub Pages:** https://herreramarcela.github.io/PFO1-FRONT/
 
 ###  Uso de Google Fonts
 - [x] Enlace a Google Fonts incluido en el `head`.
